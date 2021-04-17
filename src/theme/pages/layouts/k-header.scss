@@ -1,0 +1,40 @@
+.k-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 60px;
+    padding: 0 20px;
+    border-bottom: 1px solid #ccc;
+    background-color: #fff;
+    .k-header--left { 
+        .btn-side-toggle {
+            font-size: 24px;
+            transition: all 0.3s;
+            cursor: pointer;
+            &.is-closed {
+                transform: rotate(-90deg);
+            }
+        }
+    }
+    .k-header--right {
+        display: flex;
+        align-items: center;
+        .head-img {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            font-size: 28px;
+            border-radius: 50%;
+            color: #999;
+            background-color: #333;
+        }
+        .nickname {
+            margin-left: 10px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+    }
+}

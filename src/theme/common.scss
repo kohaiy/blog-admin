@@ -1,0 +1,18 @@
+.k-status {
+  display: inline-block;
+  align-items: center;
+  &::before {
+    content: '';
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    margin-right: 4px;
+    border-radius: 50%;
+    background-color: #666;
+  }
+  &.is-active {
+    &::before {
+      background-color: #3faa45;
+    }
+  }
+}

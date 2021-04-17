@@ -1,0 +1,35 @@
+.k-side {
+  width: 200px;
+  min-width: 200px;
+  height: 100%;
+  transition: all 0.3s;
+  overflow: hidden;
+  background-color: #282c34;
+
+  &.is-closed {
+    width: 64px;
+    min-width: 64px;
+  }
+
+  .k-side--header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    color: #ccc;
+    .icon {
+      font-size: 24px;
+    }
+    .title {
+      margin-left: 10px;
+      font-size: 16px;
+      word-break: keep-all;
+      white-space: nowrap;
+    }
+  }
+  .k-side--body {
+    .el-menu {
+      border-right: none;
+    }
+  }
+}
